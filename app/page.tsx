@@ -1,7 +1,7 @@
 
 
 export default async function Home() {
-    const request = await fetch(`${process.env.API_URL}/add_user`, {
+    const request = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/add_user`, {
         method: "POST",
         body: JSON.stringify({
             name: "John Doe",
